@@ -2,15 +2,6 @@ CREATE TABLE Employee (
     id INT(11) NOT NULL AUTO_INCREMENT,
     job_title VARCHAR(30) NOT NULL,
     salary INT(20) NOT NULL,
-    manager VARCHAR(15) NOT NULL,
-    fname VARCHAR(15) NOT NULL,
-    lname VARCHAR(15) NOT NULL,
-    PRIMARY KEY(id)
-); 
-CREATE TABLE Employee (
-    id INT(11) NOT NULL AUTO_INCREMENT,
-    job_title VARCHAR(30) NOT NULL,
-    salary INT(20) NOT NULL,
     manager_id VARCHAR(15) NOT NULL,
     fname VARCHAR(15) NOT NULL,
     lname VARCHAR(15) NOT NULL,
