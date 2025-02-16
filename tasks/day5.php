@@ -52,3 +52,16 @@
 // };
 // echo '</br>';
 //7-------------------------------------
+
+//8-------------------------------------
+$electric_bill = 166;
+if ($electric_bill <= 50) {
+    $unit = 2.50;
+} elseif ($electric_bill <= 100) {
+    $unit = 5.00;
+} elseif ($electric_bill <= 250) {
+    $unit = 6.20;
+} else {
+    $unit = 7.50;
+}
+echo $electric_bill * $unit;
