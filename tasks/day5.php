@@ -57,7 +57,7 @@
 $electric_bill = 166;
 if ($electric_bill <= 50) {
     $unit = 2.50;
-} elseif ($electric_bill <= 100) {
+} elseif ($electric_bill <= 150) {
     $unit = 5.00;
 } elseif ($electric_bill <= 250) {
     $unit = 6.20;
