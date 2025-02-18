@@ -105,19 +105,26 @@ echo basename($path);
 echo "<br/>";
 $word1 = 'dragonball';
 $word2 = 'dragonboll';
+
 $result = strspn($word1 ^ $word2, "\0");
-printf(
-    'First difference between two strings at position  %d: "%s" vs "%s"',
-    $result,
-    $word1[$result],
-    $word2[$result]
-);
+
+printf('First difference between two strings at position  %d: "%s" vs "%s"',
+    $result, $word1[$result], $word2[$result]);
 printf("\n");
 
 //12---------------------------------------------
-$char = 'a';
+$char = 'h';
+$next = ++$char; 
+if (strlen($next) > 1) 
+{
+ $next = $next[0];
+ }
+echo $next."\n";
 //13---------------------------------------------
-$nums12 = '0000657022.25';
+$number = "000065722.24";
+
+$number = ltrim($number , "0");
+echo $number;
 
 //14---------------------------------------------
 echo "<br/>";
